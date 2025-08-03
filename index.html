@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Website header -->
-    <div id="head">
+    <div id="hero">
 
         <!-- Navigation bar -->
-        <div>
+        <div id="navigation">
 
-            <div><h4>Header Logo</h4></div>
+            <div id="logo">Header Logo</div>
 
-            <div>
+            <div id="links">
                 <a>header link one</a>
                 <a>header link two</a>
                 <a>header link three</a>
@@ -23,26 +24,28 @@
 
         </div>
 
-        <!-- Website info -->
+        <!-- hero main part -->
         <div>
 
             <div>
-                <h2>This website is awesome</h2>
-                <p>subtext under the main title</p>
+                <div id="main">This website is awesome</div>
+                <div id="secondary">subtext under the main title</div>
             </div>
 
-            <div><h1>Image</h1></div>
+            <div>Image</div>
+
+            <Button style="background-color: #3882F6;">Sign up</Button>
 
         </div>
 
     </div>
 
-    <div id="body">
+    <div id="information">
 
         <!-- information -->
          <div>
 
-            <div>Some random information.</div>
+            <div id="header">Some random information.</div>
 
             <!-- cards and their subtext-->
             <div>
@@ -72,12 +75,11 @@
          </div>
 
          <!-- quote -->
-          <div>
+          <div style="background-color: #E5E7EB;">
 
-            <div>This is an inspiring quote or a testimonial from a customer. 
+            <div id="quote">This is an inspiring quote or a testimonial from a customer. 
                 Maybe it's just filling up space, or maybe people will actually read it. 
-                Who knows? All I know is that it looks nice.
-            </div>
+                Who knows? All I know is that it looks nice.</div>
 
             <div>Aladdin</div>
 
@@ -85,7 +87,7 @@
 
     </div>
 
-    <div id="foot">
+    <div>
 
         <!-- sign up -->
          <div>
@@ -104,8 +106,9 @@
          </div>
 
         <!-- copyright -->
-         <div>The Odin Project</div>
     </div>
+
+    <div id="foot">The Odin Project</div>
 
 </body>
 </html>
