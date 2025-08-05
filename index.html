@@ -16,57 +16,59 @@
 
             <div id="logo">Header Logo</div>
 
-            <div id="links">
-                <a>header link one</a>
-                <a>header link two</a>
-                <a>header link three</a>
+            <div id="links_container">
+                
+                <a href="https://www.youtube.com" target="_blank">header link one</a>
+                <a href="https://www.google.com" target="_blank">header link two</a>
+                <a href="https://www.github.com" target="_blank">header link three</a>
+
             </div>
 
         </div>
 
         <!-- hero main part -->
-        <div>
+        <div id="main">
 
             <div>
-                <div id="main">This website is awesome</div>
-                <div id="secondary">subtext under the main title</div>
+                <div class="main_left" id="main_statement">This website is awesome</div>
+                <div class="main_left" id="secondary_statement">subtext under the main title</div>
+                <Button class="main_left">Sign up</Button>
             </div>
 
-            <div>Image</div>
+            <div id="image">This is a placeholder for an image</div>
 
-            <Button style="background-color: #3882F6;">Sign up</Button>
-
+            
         </div>
 
     </div>
 
-    <div id="information">
+    <div>
 
         <!-- information -->
-         <div>
+         <div id="information">
 
             <div id="header">Some random information.</div>
 
             <!-- cards and their subtext-->
-            <div>
+            <div style="display: flex; gap: 50px; justify-content: center;">
 
-                <div>
-                    <div></div>
+                <div class="card_container">
+                    <div class="card"></div>
                     <div>this is some subtext under an illustration or image</div>
                 </div>
 
-                <div>
-                    <div></div>
+                <div class="card_container">
+                    <div class="card"></div>
                     <div>this is some subtext under an illustration or image</div>
                 </div>
 
-                <div>
-                    <div></div>
+                <div class="card_container">
+                    <div class="card"></div>
                     <div>this is some subtext under an illustration or image</div>
                 </div>
 
-                <div>
-                    <div></div>
+                <div class="card_container">
+                    <div class="card"></div>
                     <div>this is some subtext under an illustration or image</div>
                 </div>
 
@@ -75,39 +77,53 @@
          </div>
 
          <!-- quote -->
-          <div style="background-color: #E5E7EB;">
+          <div id="quote_container">
 
             <div id="quote">This is an inspiring quote or a testimonial from a customer. 
                 Maybe it's just filling up space, or maybe people will actually read it. 
                 Who knows? All I know is that it looks nice.</div>
 
-            <div>Aladdin</div>
+            <div style="width: 500px; text-align: right; font-size: 25px;">
+                <strong>-Aladdin</strong>
+            </div>
 
           </div>
 
     </div>
 
-    <div>
 
-        <!-- sign up -->
-         <div>
+    <div style="
+                display: flex;
+                justify-content: center;
+                align-items: center;">
 
-            <div>
-    
-                <div>Call to action! It's time!</div>
-    
-                <div>Sign up for our product by clicking right over there!</div>
+    <!-- sign up -->
+        <div style="
+            width: 900px;
+            height: 150px;
+            background-color: #3882F6;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            gap: 200px">
+            
+            <div id="sign_up">
 
+                <div class="sign_up_text" style="font-size: 20px; font-weight: bold;">Call to action! It's time!</div>
+
+                <div class="sign_up_text" style="font-size: 16px; font-weight: normal;">Sign up for our product by clicking right over there!</div>
+                
+                <!-- sign up button -->
+                
             </div>
+            
+            <button id="sign_up_button">Sign up</button>
+        </div>
 
-            <!-- sign up button -->
-            <div></div>
-
-         </div>
-
-        <!-- copyright -->
     </div>
-
+    <!-- copyright -->
     <div id="foot">The Odin Project</div>
 
 </body>
